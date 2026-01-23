@@ -1,102 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Florence Tubosa | Developer Portfolio</title>
-  <link rel="stylesheet" href="me.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Florence Tubosa | Full-Stack Developer</title>
+  <link rel="stylesheet" href="me.css" />
 </head>
 
 <body>
-  <header>
-    <img src="IMG_4272 xj 2x2.jpg" alt="Florence Tubosa" class="profile-pic">
-    <h1>Florence P. Tubosa</h1>
-    <p>Full-Stack Developer | Zamboanga City, Philippines</p>
-    <p><a href="mailto:florencetubosa8@gmail.com">florencetubosa8@gmail.com</a></p>
-    <a href="FlorenceTubosa.pdf" download class="btn">Download Resume (PDF)</a>
-</header>
+  <main class="container">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-left">
+        <img src="passport_35x45mm_300dpi.jpg" alt="Florence Tubosa profile photo" class="avatar" />
+      </div>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Hi! I'm Florence Tubosa, a full-stack developer based in Zamboanga City, Philippines. I specialize in building practical, business-driven 
-      software solutions using Python, VB.NET, MySQL, and modern web technologies. I focus on creating systems that solve real problems and improve productivity.
-    </p>
-  </section>
+      <div class="header-right">
+        <h1 class="title">Florence P. Tubosa</h1>
+        <p class="subtitle">Full-Stack Developer • Zamboanga City, Philippines</p>
+        <p class="meta">
+          <a href="mailto:florencetubosa8@gmail.com">florencetubosa8@gmail.com</a>
+          <span class="dot">•</span>
+          <a href="https://linkedin.com/in/florencetubosa" target="_blank" rel="noreferrer">LinkedIn</a>
+          <span class="dot">•</span>
+         
+        </p>
 
-  <section id="projects">
-    <h2>Projects</h2>
+        <div class="actions">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn outline" href="Florence Tubosa_CV.pdf" download>Download CV (PDF)</a>
+        </div>
+      </div>
+    </header>
 
-    <div class="project">
-      <h3> Cost Allocation System</h3>
-      <p><strong>Tech:</strong> VB.NET + MySQL</p>
-      <p>Windows-based tool to calculate, track, and report cost allocations across departments.</p>
-      <p><strong>Role:</strong> Sole developer – UI, logic, and database design</p>
-           <img src="CA Login.png" alt="Florence Tubosa" class="profile-pic1">
-         <img src="CostAllocation System.png" alt="Florence Tubosa" class="profile-pic1">
-    </div>
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <h2>About</h2>
+      <p>
+        I build practical business systems for payroll, HR, inventory, analytics dashboards, and customer management.
+        My main stack includes Python (Flask), Node.js, VB.NET, JavaScript, and MySQL. I also deploy and maintain apps
+        on VPS environments (Hostinger) with SSL and domain configuration.
+      </p>
+    </section>
 
-    <div class="project">
-      <h3> Auction Jewelry Inventory System</h3>
-      <p><strong>Tech:</strong> VB.NET + MySQL</p>
-      <p>Real-time tracking and management system for auction jewelry inventory with CRUD features and reporting tools.</p>
-      <p><strong>Role:</strong> Sole developer – UI, logic, and database</p>
-    </div>
+    <!-- WHAT I BUILD -->
+    <section class="section" id="focus">
+      <h2>What I Build</h2>
+      <ul class="bullets">
+        <li>Payroll & cost allocation systems (reporting, cut-off computation)</li>
+        <li>Inventory & accounting tools (tracking, in/out monitoring, reports across branches)</li>
+        <li>Customer concerns workflow (follow-ups, resolution, analytics)</li>
+        <li>Dashboards & reporting (filters, summaries, branch views)</li>
+        <li>Secure systems (OTP/JWT, validation, error handling)</li>
+      </ul>
+    </section>
 
-    <div class="project">
-      <h3> Marketing Web Portal</h3>
-      <p><strong>Tech:</strong> Python (Flask), HTML/CSS, JavaScript, MySQL</p>
-      <p>Internal web platform to manage marketing campaigns and leads.</p>
-      <p><strong>Hosting:</strong> Deployed on Hostinger VPS</p>
-      <p><strong>Role:</strong> Sole developer – UI, backend, and database</p>
-    </div>
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <h2>Projects</h2>
 
-    <div class="project">
-      <h3> Marketing Analysis System</h3>
-      <p><strong>Tech:</strong> VB.NET + MySQL</p>
-      <p>Internal data analysis system for evaluating leads and campaign performance.</p>
-      <p><strong>Role:</strong> Sole developer – UI, logic, and database</p>
-      <img src="Customer Info.png" alt="Florence Tubosa" class="profile-pic1">
-    </div>
+      <!-- Project Card -->
+      <article class="card">
+        <div class="card-head">
+          <h3>Customer Concerns System</h3>
+          <p class="stack">HTML • CSS/Tailwind • JavaScript • Node.js • MySQL • Hostinger VPS</p>
+        </div>
 
+        <p class="desc">
+          Internal web system to track customer complaints, follow-ups, resolution status, and admin analytics.
+        </p>
 
-    <div class="project">
-      <h3> Accounting Inventory System</h3>
-      <p><strong>Tech:</strong> VB.NET + Remote MySQL(Hostinger)</p>
-      <p>Invenotry of Accounting Items, Monitor In and Out Items. Centralized Inventory</p>
-      <p><strong>Role:</strong> Sole developer – UI, logic, and database</p>
-        <img src="InventoryLogin.png" alt="Florence Tubosa" class="profile-pic1">
-          <img src="InventoryDashboard.png" alt="Florence Tubosa" class="profile-pic2">
-    </div>
+        <ul class="bullets">
+          <li>Complaint submission + branch tracking</li>
+          <li>Follow-up & resolution workflow (status updates)</li>
+          <li>Admin analytics dashboard + summary reporting</li>
+          <li>Deployed on VPS with SSL/domain configuration</li>
+        </ul>
 
-     <div class="project">
-      <h3>HR Employee System</h3>
-      <p><strong>Tech:</strong> VB.NET + Remote MySQL(Hostinger)</p>
-      <p>Employee Information like Trainings Attended, Salary Adjustments, Offense and Violations,Promotions And Separations</p>
-      <p><strong>Role:</strong> Sole developer – UI, logic, and database</p>
-        <img src="HR_Log.png" alt="Florence Tubosa" class="profile-pic1">
-          <img src="HR_DASGBOARD.png" alt="Florence Tubosa" class="profile-pic2">
-    </div>
-  </section>
+        <p class="role"><strong>Role:</strong> Sole developer (UI, backend, database, deployment)</p>
 
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li><strong>Languages:</strong> Python (Flask), VB.NET, JavaScript, HTML, CSS</li>
-      <li><strong>Databases:</strong> MySQL, Sqlite</li>
-      <li><strong>Web Hosting & Deployment:</strong> Hostinger VPS, SSL, FTP, Domain Config, AWS, Railway</li> 
-    </ul>
-  </section>
+        <div class="links">
+          <a class="link" href="#screenshots-concerns">Screenshots</a>
+        </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> <a href="mailto:florencetubosa8@gmail.com">florencetubosa8@gmail.com</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/florencetubosa" target="_blank">linkedin.com/in/florencetubosa</a></p>
+        <div class="gallery" id="screenshots-concerns">
+          <img src="image.png" alt="Customer Concerns - main screen" />
+          <img src="Branch Dashboard.png" alt="Customer Concerns - branch dashboard" />
+          <img src="Admin Analytics.png" alt="Customer Concerns - admin analytics" />
+          <img src="summary.png" alt="Customer Concerns - summary report" />
+        </div>
+      </article>
 
-  </section>
+      <article class="card">
+        <div class="card-head">
+          <h3>Cost Allocation System</h3>
+          <p class="stack">VB.NET • MySQL</p>
+        </div>
 
-  <footer>
-    <p>© 2025 Florence Tubosa. All rights reserved.</p>
-  </footer>
+        <p class="desc">Windows-based tool to calculate and report cost allocations across departments.</p>
+
+        <ul class="bullets">
+          <li>Cost allocation entry and tracking</li>
+          <li>Monthly reporting and summaries</li>
+          <li>Database-driven records and filtering</li>
+        </ul>
+
+        <p class="role"><strong>Role:</strong> Sole developer (UI, logic, database design)</p>
+
+       
+
+        <div class="gallery">
+          <img src="Cost Allocation Log In.png" alt="Cost Allocation - login" />
+          <img src="CA Employee Information.png" alt="Cost Allocation - dashboard" />
+          <img src="CA Activity form.png" alt="Cost Allocation - Input Activity" />
+           <img src="CA department report.png" alt="Cost Allocation - department report" />
+           <img src="CA branches REport.png" alt="Cost Allocation - branch report" />
+            <img src="CA Hourd rendered in branh.png" alt="Cost Allocation -Hours rendered per branch report" />
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Accounting Inventory System</h3>
+          <p class="stack">VB.NET • Remote MySQL (Hostinger)</p>
+        </div>
+
+        <p class="desc">Centralized inventory tracking for accounting items with monitoring of item check-in/check-out.</p>
+
+        <ul class="bullets">
+          <li>Item tracking (in/out) and history logs</li>
+          <li>Centralized database (remote MySQL)</li>
+          <li>Reporting for accountability</li>
+        </ul>
+
+        <p class="role"><strong>Role:</strong> Sole developer (UI, logic, database)</p>
+
+       
+
+        <div class="gallery">
+          <img src="InventoryLogin.png" alt="Inventory - login" />
+          <img src="InventoryDashboard.png" alt="Inventory - dashboard" />
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>HR Employee System</h3>
+          <p class="stack">VB.NET • Remote MySQL (Hostinger)</p>
+        </div>
+
+        <p class="desc">Employee records: trainings, salary adjustments, offenses/violations, promotions, separations.</p>
+
+        <ul class="bullets">
+          <li>Employee profile management</li>
+          <li>Historical tracking (training, adjustments, incidents)</li>
+          <li>Centralized remote database</li>
+        </ul>
+
+        <p class="role"><strong>Role:</strong> Sole developer (UI, logic, database)</p>
+
+       
+
+        <div class="gallery">
+          <img src="HR_Log.png" alt="HR - login" />
+          <img src="HR_DASGBOARD.png" alt="HR - dashboard" />
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Marketing Analysis System</h3>
+          <p class="stack">VB.NET • MySQL</p>
+        </div>
+
+        <p class="desc">Internal dashboard analyzing leads, age range, demographics, and transaction trends.</p>
+
+        <ul class="bullets">
+          <li>Analytics dashboard and reporting views</li>
+          <li>Filtering and summaries for decision support</li>
+        </ul>
+
+        <p class="role"><strong>Role:</strong> Sole developer (UI, logic, database)</p>
+
+       
+
+        <div class="gallery">
+          <img src="Customer Info.png" alt="Marketing Analysis - customer info" />
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Marketing Web Portal</h3>
+          <p class="stack">Python (Flask) • HTML/CSS • JavaScript • MySQL • Hostinger VPS</p>
+        </div>
+
+        <p class="desc">Internal web platform for managing marketing campaigns and leads.</p>
+
+        <ul class="bullets">
+          <li>Lead management and campaign records</li>
+          <li>Database-backed CRUD workflows</li>
+          <li>Deployed and maintained on VPS</li>
+        </ul>
+
+        <p class="role"><strong>Role:</strong> Sole developer (UI, backend, database, deployment)</p>
+
+        <div class="gallery">
+          <img src="KYC login.png" alt="Marketing Web Portal - Log In" />
+          <img src="KYC form (2).png" alt="Marketing Web Portal - Search customer transactions" />
+          <img src="Table.png" alt="Marketing Web Portal - Customer transactions" />
+          <img src="KYC submit info.png" alt="Marketing Web Portal - Submit Customer Info" />
+         
+        </div>
+      </article>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <h2>Skills</h2>
+      <ul class="bullets">
+        <li><strong>Languages:</strong> Python (Flask), Node.js, VB.NET, JavaScript, HTML, CSS, Tailwind</li>
+        <li><strong>Databases:</strong> MySQL, SQLite</li>
+        <li><strong>Deployment:</strong> Hostinger VPS, SSL, FTP, domain config</li>
+      </ul>
+      <p class="note">
+  Note: Some projects are internal/proprietary, so source code is not publicly available.
+  Screenshots and feature summaries are provided.
+</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:florencetubosa8@gmail.com">florencetubosa8@gmail.com</a><br />
+        LinkedIn: <a href="https://linkedin.com/in/florencetubosa" target="_blank" rel="noreferrer">linkedin.com/in/florencetubosa</a><br />
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Florence Tubosa</p>
+    </footer>
+  </main>
 </body>
 </html>
